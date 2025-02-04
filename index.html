@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture Landing Page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+      .inter-font {
+        font-family: "Inter", serif;
+        font-optical-sizing: auto;
+        font-weight: "100";
+        font-style: normal;
+      }
+    </style>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --color-darkblue: #272343;
+        --color-grey: #f0f2f3;
+        --color-green: #007580;
+        --color-black: #272343;
+        --color-border-color: #e1e3e5;
+        --color-menu-color: #636270;
+        --color-primary: #007580;
+        --color-orange: #f05c52;
+      }
+    </style>
+  </head>
+
+  <body class="inter-font text-white h-[300vh] w-screen">
+    <!-- header -->
+    <section
+      class="bg-darkblue text-xs font-extralight px-28 p-3 flex justify-between items-center"
+    >
+      <!-- title -->
+      <section class="flex gap-x-2 items-center">
+        <figure>
+          <img src="./assets/icons/tick.svg" class="w-4 h-4" alt="tick icons" />
+        </figure>
+        <p class="">Free shipping on all orders over $50</p>
+      </section>
+      <!-- sub nav -->
+      <section>
+        <ul class="flex items-center gap-x-5">
+          <li class="flex items-center gap-x-1">
+            <span>Eng</span>
+            <figure>
+              <img
+                src="./assets/icons/chevron-down.svg"
+                class="w-3 h-3"
+                alt="chevron-down icon"
+              />
+            </figure>
+          </li>
+          <li>Faqs</li>
+          <li class="flex items-center gap-x-1">
+            <figure>
+              <img
+                src="/assets/icons/information-circle.svg"
+                class="w-4 h-4"
+                alt="information-circle"
+              />
+            </figure>
+            <span>Need Help</span>
+          </li>
+        </ul>
+      </section>
+    </section>
+
+    <!-- Main Nav -->
+    <header class="bg-grey px-28 py-5 flex justify-between items-center">
+      <!-- Logo and Name -->
+      <section class="flex items-center gap-x-2">
+        <img
+          src="/assets/icons/logo-icon.svg"
+          class="w-8 h-8"
+          alt="Icon Logo"
+        />
+        <h5 class="capitalize text-lg text-black font-normal">comforty</h5>
+      </section>
+      <!-- Search Placeholder -->
+      <section class="relative">
+        <input
+          type="text"
+          placeholder="Search here ...."
+          class="bg-white text-black text-sm py-2.5 px-5 w-[23em] rounded-md placeholder:text-sm placeholder:text-black/50 placeholder:font-light outline-none"
+        />
+        <button class="absolute right-4 top-1/2 -translate-y-1/2">
+          <img
+            src="./assets/icons/magnifying-glass.svg"
+            class="w-4 h-4"
+            alt="search icon"
+          />
+        </button>
+      </section>
+      <!-- Profile & Card & Fav -->
+      <section class="flex justify-center items-center gap-x-5">
+        <!-- shopping-cart. -->
+        <div class="bg-white p-2.5 rounded-md flex items-center gap-x-3">
+          <img
+            src="/assets/icons/shopping-cart.svg"
+            class="w-5 h-5"
+            alt="shopping-cart"
+          />
+          <p class="capitalize text-black text-sm">Cart</p>
+          <span
+            class="w-5 h-5 rounded-full bg-green flex items-center justify-center text-xs"
+          >
+            2
+          </span>
+        </div>
+        <!-- Favorite -->
+        <figure class="bg-white p-2.5 rounded-md">
+          <img
+            src="/assets/icons/heart.svg"
+            class="w-5 h-5"
+            alt="Favorite Icon"
+          />
+        </figure>
+        <!-- Profile -->
+        <figure class="bg-white p-2.5 rounded-md">
+          <img src="/assets/icons/profile.svg" class="w-5 h-5" alt="profile" />
+        </figure>
+      </section>
+    </header>
+
+    <!-- Navigation -->
+    <nav
+      class="px-28 p-5 flex items-center justify-between border border-b-border-color"
+    >
+      <!-- Hamburger button & Main Menu -->
+      <div class="flex items-center gap-x-10">
+        <!-- Hamburger button -->
+        <section
+          class="border border-border-color rounded-md flex gap-x-3 items-center w-40 p-2"
+        >
+          <img
+            src="/assets/icons/hamburger.svg"
+            class="w-6 h-6"
+            alt="hamburger button"
+          />
+          <p class="capitalize text-black text-sm">all categories</p>
+        </section>
+
+        <!-- Main Menu -->
+        <ul class="flex items-center gap-x-5 text-menu-color text-sm">
+          <li class="text-primary">Home</li>
+          <li>Shop</li>
+          <li>Product</li>
+          <li>Page</li>
+          <li>About</li>
+        </ul>
+      </div>
+
+      <!-- contact -->
+      <section class="text-sm">
+        <p class="text-menu-color">
+          contact : <span class="text-black">(808) 555-0111 </span>
+        </p>
+      </section>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="bg-grey h-[calc(100vh-100px)] mx-11 rounded-bl-3xl relative">
+      <!-- Main Landing -->
+      <section class="h-[calc(100vh-200px)]">
+        <div
+          class="flex h-full justify-between items-center px-10 relative overflow-hidden"
+        >
+          <!-- arrow left -->
+          <figure class="bg-white p-2.5 rounded-full w-10 h-10">
+            <img
+              src="./assets/icons/arrow-left.svg"
+              class="w-5 h-5"
+              alt="arrow-left"
+            />
+          </figure>
+
+          <!-- Main content -->
+          <section
+            class="flex justify-evenly items-center w-[calc(100%-200px)] gap-x-20"
+          >
+            <!-- Group of heading -->
+            <div class="flex flex-col gap-y-5">
+              <h6 class="text-xs font-light text-black">Welcome to chairy</h6>
+              <h2 class="capitalize font-bold text-6xl/17 text-black">
+                Best Furniture <br />
+                Collection for your <br />
+                interior.
+              </h2>
+              <!-- shopping button -->
+              <button
+                class="flex justify-between items-center bg-green/88 max-w-40 py-2.5 px-5 rounded-md"
+              >
+                <span>Shop Now</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="white"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Chair Image -->
+            <figure class="relative z-20">
+              <img
+                src="./assets/images/chair.png"
+                class="w-[22em]"
+                alt="Chair"
+              />
+              <div
+                class="bg-white p-7 rounded-full absolute top-0 -right-8 z-10"
+              >
+                <p class="text-orange text-center text-4xl font-semibold">
+                  54%
+                </p>
+                <p class="text-black text-center mt-0.5 text-sm font-light">
+                  Discount
+                </p>
+              </div>
+            </figure>
+            <div
+              class="bg-[#E1E3E5] p-72 rounded-full absolute -top-[28%] right-28 z-10"
+            ></div>
+          </section>
+
+          <!-- arrow right -->
+          <figure class="bg-white p-2.5 rounded-full w-10 h-10">
+            <img
+              src="./assets/icons/arrow-right.svg"
+              class="w-5 h-5"
+              alt="arrow-left"
+            />
+          </figure>
+
+          <!-- Navigation Dots -->
+          <div
+            class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-x-2"
+          >
+            <div class="w-2 h-2 rounded-full bg-[#E1E3E5]"></div>
+            <div class="w-2 h-2 rounded-full bg-darkblue"></div>
+            <div class="w-2 h-2 rounded-full bg-[#E1E3E5]"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature -->
+      <section
+        class="bg-white w-[calc(100%-18rem)] shadow-lg border border-slate-100/25 p-10 rounded-xl absolute -bottom-16 left-[60%] -translate-x-[60%] flex justify-between items-center gap-x-10"
+      >
+        <!-- Discount -->
+        <article class="flex items-center gap-x-3">
+          <img src="./assets/icons/box.svg" class="w-10 h-10" alt="box icon" />
+          <div>
+            <h6 class="text-black font-medium">Discount</h6>
+            <p class="text-menu-color text-sm">Every week new sales</p>
+          </div>
+        </article>
+
+        <!-- Free Delivery -->
+        <article class="flex items-center gap-x-3">
+          <img
+            src="./assets/icons/delivery-truck.svg"
+            class="w-10 h-10"
+            alt="truck icon"
+          />
+          <div>
+            <h6 class="text-black font-medium">Free Delivery</h6>
+            <p class="text-menu-color text-sm">100% Free for all orders</p>
+          </div>
+        </article>
+
+        <!-- Great Support -->
+        <article class="flex items-center gap-x-3">
+          <img
+            src="./assets/icons/24-hours.svg"
+            class="w-10 h-10"
+            alt="support icon"
+          />
+          <div>
+            <h6 class="text-black font-medium">Great Support 24/7</h6>
+            <p class="text-menu-color text-sm">We care your experiences</p>
+          </div>
+        </article>
+
+        <!-- Secure Payment -->
+        <article class="flex items-center gap-x-3">
+          <img
+            src="./assets/icons/shield.svg"
+            class="w-10 h-10"
+            alt="secure payment icon"
+          />
+          <div>
+            <h6 class="text-black font-medium">Secure Payment</h6>
+            <p class="text-menu-color text-sm">100% Secure Payment Method</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Partner -->
+      <section class="mt-64 w-[calc(100%-22rem)] mx-auto flex justify-between">
+        <img src="/assets/icons/partner/Logo.svg" alt="partner" />
+        <img src="/assets/icons/partner/Logo-1.svg" alt="partner 1" />
+        <img src="/assets/icons/partner/Logo-2.svg" alt="partner 2" />
+        <img src="/assets/icons/partner/Logo-3.svg" alt="partner 3" />
+        <img src="/assets/icons/partner/Logo-4.svg" alt="partner 4" />
+        <img src="/assets/icons/partner/Logo-5.svg" alt="partner 5" />
+        <img src="/assets/icons/partner/Logo-6.svg" alt="partner 6" />
+      </section>
+
+      <!-- Featured Products -->
+      <section class="mt-14 w-[calc(100%-22rem)] mx-auto">
+        <!-- header of section -->
+        <section class="flex justify-between items-center">
+          <h2 class="text-black font-medium text-2xl">Featured Products</h2>
+          <!-- Group button -->
+          <div class="flex items-center gap-x-4">
+            <button
+              class="bg-green w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
+                />
+              </svg>
+            </button>
+            <button
+              class="bg-grey w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="black"
+                class="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <!-- List of product -->
+        <section class="mt-14 w-full flex justify-between">
+          <!-- Product 1 -->
+          <article class="relative">
+            <img
+              src="/assets/images/char-1.svg"
+              class="w-60 h-60"
+              alt="product char 1"
+            />
+            <!-- image tag  -->
+            <span
+              class="bg-[#01AD5A] text-white text-xs px-3 py-1 rounded capitalize absolute top-3 left-4"
+              >new</span
+            >
+            <!-- Favorite Icon -->
+            <button class="bg-white p-2.5 rounded-md absolute top-3 right-4">
+              <img src="/assets/icons/heart.svg" class="w-5 h-5" alt="" />
+            </button>
+            <footer class="flex justify-between items-center mt-1">
+              <header>
+                <h3 class="text-green font-light text-sm mt-4">
+                  Library Stool Chair
+                </h3>
+                <p class="text-black font-light text-sm mt-2">20$</p>
+              </header>
+              <button
+                class="bg-green/95 w-9 h-9 p-2 flex justify-center items-center rounded-md"
+              >
+                <img
+                  src="/assets/icons/shopping-cart-white.svg"
+                  class="w-4 h-4"
+                  alt="shopping cart"
+                />
+              </button>
+            </footer>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="relative">
+            <img
+              src="/assets/images/char-2.svg"
+              class="w-60 h-60"
+              alt="product char 1"
+            />
+            <!-- image tag  -->
+            <span
+              class="bg-[#01AD5A] text-white text-xs px-3 py-1 rounded capitalize absolute top-3 left-4"
+              >new</span
+            >
+            <!-- Favorite button -->
+            <button class="bg-white p-2.5 rounded-md absolute top-3 right-4">
+              <img src="/assets/icons/heart.svg" class="w-5 h-5" alt="" />
+            </button>
+
+            <footer class="flex justify-between items-center mt-1">
+              <header>
+                <h3 class="text-green font-light text-sm mt-4">
+                  Library Stool Chair
+                </h3>
+                <p class="text-black font-light text-sm mt-2">20$</p>
+              </header>
+              <button
+                class="bg-green/95 w-9 h-9 p-2 flex justify-center items-center rounded-md"
+              >
+                <img
+                  src="/assets/icons/shopping-cart-white.svg"
+                  class="w-4 h-4"
+                  alt="shopping cart"
+                />
+              </button>
+            </footer>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="relative">
+            <img
+              src="/assets/images/char-3.svg"
+              class="w-60 h-60"
+              alt="product char 1"
+            />
+            <!-- image tag  -->
+            <span
+              class="bg-[#01AD5A] text-white text-xs px-3 py-1 rounded capitalize absolute top-3 left-4"
+              >new</span
+            >
+            <!-- Favorite button -->
+            <button class="bg-white p-2.5 rounded-md absolute top-3 right-4">
+              <img src="/assets/icons/heart.svg" class="w-5 h-5" alt="" />
+            </button>
+
+            <footer class="flex justify-between items-center mt-1">
+              <header>
+                <h3 class="text-green font-light text-sm mt-4">
+                  Library Stool Chair
+                </h3>
+                <p class="text-black font-light text-sm mt-2">20$</p>
+              </header>
+              <button
+                class="bg-green/95 w-9 h-9 p-2 flex justify-center items-center rounded-md"
+              >
+                <img
+                  src="/assets/icons/shopping-cart-white.svg"
+                  class="w-4 h-4"
+                  alt="shopping cart"
+                />
+              </button>
+            </footer>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="relative">
+            <img
+              src="/assets/images/char-4.svg"
+              class="w-60 h-60"
+              alt="product char 1"
+            />
+            <!-- image tag  -->
+            <span
+              class="bg-[#01AD5A] text-white text-xs px-3 py-1 rounded capitalize absolute top-3 left-4"
+              >new</span
+            >
+            <!-- Favorite button -->
+            <button class="bg-white p-2.5 rounded-md absolute top-3 right-4">
+              <img src="/assets/icons/heart.svg" class="w-5 h-5" alt="" />
+            </button>
+
+            <footer class="flex justify-between items-center mt-1">
+              <header>
+                <h3 class="text-green font-light text-sm mt-4">
+                  Library Stool Chair
+                </h3>
+                <p class="text-black font-light text-sm mt-2">20$</p>
+              </header>
+              <button
+                class="bg-green/95 w-9 h-9 p-2 flex justify-center items-center rounded-md"
+              >
+                <img
+                  src="/assets/icons/shopping-cart-white.svg"
+                  class="w-4 h-4"
+                  alt="shopping cart"
+                />
+              </button>
+            </footer>
+          </article>
+        </section>
+      </section>
+
+      <!--  -->
+    </main>
+  </body>
+</html>
